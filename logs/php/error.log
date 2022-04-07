@@ -1,0 +1,36 @@
+[07-Apr-2022 09:47:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/wilder/Local Sites/projet2/app/public/wp-includes/functions.php:5219) in /home/wilder/Local Sites/projet2/app/public/wp-includes/pluggable.php on line 1355
+[07-Apr-2022 09:47:51 UTC] PHP Stack trace:
+[07-Apr-2022 09:47:51 UTC] PHP   1. {main}() /home/wilder/Local Sites/projet2/app/public/wp-admin/themes.php:0
+[07-Apr-2022 09:47:51 UTC] PHP   2. require_once() /home/wilder/Local Sites/projet2/app/public/wp-admin/themes.php:10
+[07-Apr-2022 09:47:51 UTC] PHP   3. do_action($hook_name = 'appearance_page_install-required-plugins') /home/wilder/Local Sites/projet2/app/public/wp-admin/admin.php:259
+[07-Apr-2022 09:47:51 UTC] PHP   4. WP_Hook->do_action($args = [0 => '']) /home/wilder/Local Sites/projet2/app/public/wp-includes/plugin.php:474
+[07-Apr-2022 09:47:51 UTC] PHP   5. WP_Hook->apply_filters($value = '', $args = [0 => '']) /home/wilder/Local Sites/projet2/app/public/wp-includes/class-wp-hook.php:331
+[07-Apr-2022 09:47:51 UTC] PHP   6. TGM_Plugin_Activation->install_plugins_page('') /home/wilder/Local Sites/projet2/app/public/wp-includes/class-wp-hook.php:307
+[07-Apr-2022 09:47:51 UTC] PHP   7. TGM_Plugin_Activation->do_plugin_install() /home/wilder/Local Sites/projet2/app/public/wp-content/themes/oceanwp/inc/plugins/class-tgm-plugin-activation.php:658
+[07-Apr-2022 09:47:51 UTC] PHP   8. TGM_Plugin_Activation->activate_single_plugin($file_path = 'ocean-extra/ocean-extra.php', $slug = 'ocean-extra', $automatic = TRUE) /home/wilder/Local Sites/projet2/app/public/wp-content/themes/oceanwp/inc/plugins/class-tgm-plugin-activation.php:818
+[07-Apr-2022 09:47:51 UTC] PHP   9. activate_plugin($plugin = 'ocean-extra/ocean-extra.php', $redirect = *uninitialized*, $network_wide = *uninitialized*, $silent = *uninitialized*) /home/wilder/Local Sites/projet2/app/public/wp-content/themes/oceanwp/inc/plugins/class-tgm-plugin-activation.php:957
+[07-Apr-2022 09:47:51 UTC] PHP  10. do_action($hook_name = 'activate_ocean-extra/ocean-extra.php', ...$arg = variadic(FALSE)) /home/wilder/Local Sites/projet2/app/public/wp-admin/includes/plugin.php:689
+[07-Apr-2022 09:47:51 UTC] PHP  11. WP_Hook->do_action($args = [0 => FALSE]) /home/wilder/Local Sites/projet2/app/public/wp-includes/plugin.php:474
+[07-Apr-2022 09:47:51 UTC] PHP  12. WP_Hook->apply_filters($value = '', $args = [0 => FALSE]) /home/wilder/Local Sites/projet2/app/public/wp-includes/class-wp-hook.php:331
+[07-Apr-2022 09:47:51 UTC] PHP  13. Ocean_Extra_Theme_Wizard::install(FALSE) /home/wilder/Local Sites/projet2/app/public/wp-includes/class-wp-hook.php:307
+[07-Apr-2022 09:47:51 UTC] PHP  14. wp_safe_redirect($location = 'http://vision.local/wp-admin/admin.php?page=owp_setup', $status = *uninitialized*, $x_redirect_by = *uninitialized*) /home/wilder/Local Sites/projet2/app/public/wp-content/plugins/ocean-extra/includes/wizard/wizard.php:45
+[07-Apr-2022 09:47:51 UTC] PHP  15. wp_redirect($location = 'http://vision.local/wp-admin/admin.php?page=owp_setup', $status = 302, $x_redirect_by = 'WordPress') /home/wilder/Local Sites/projet2/app/public/wp-includes/pluggable.php:1463
+[07-Apr-2022 09:47:51 UTC] PHP  16. header($header = 'X-Redirect-By: WordPress') /home/wilder/Local Sites/projet2/app/public/wp-includes/pluggable.php:1355
+[07-Apr-2022 09:47:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/wilder/Local Sites/projet2/app/public/wp-includes/functions.php:5219) in /home/wilder/Local Sites/projet2/app/public/wp-includes/pluggable.php on line 1358
+[07-Apr-2022 09:47:51 UTC] PHP Stack trace:
+[07-Apr-2022 09:47:51 UTC] PHP   1. {main}() /home/wilder/Local Sites/projet2/app/public/wp-admin/themes.php:0
+[07-Apr-2022 09:47:51 UTC] PHP   2. require_once() /home/wilder/Local Sites/projet2/app/public/wp-admin/themes.php:10
+[07-Apr-2022 09:47:51 UTC] PHP   3. do_action($hook_name = 'appearance_page_install-required-plugins') /home/wilder/Local Sites/projet2/app/public/wp-admin/admin.php:259
+[07-Apr-2022 09:47:51 UTC] PHP   4. WP_Hook->do_action($args = [0 => '']) /home/wilder/Local Sites/projet2/app/public/wp-includes/plugin.php:474
+[07-Apr-2022 09:47:51 UTC] PHP   5. WP_Hook->apply_filters($value = '', $args = [0 => '']) /home/wilder/Local Sites/projet2/app/public/wp-includes/class-wp-hook.php:331
+[07-Apr-2022 09:47:51 UTC] PHP   6. TGM_Plugin_Activation->install_plugins_page('') /home/wilder/Local Sites/projet2/app/public/wp-includes/class-wp-hook.php:307
+[07-Apr-2022 09:47:51 UTC] PHP   7. TGM_Plugin_Activation->do_plugin_install() /home/wilder/Local Sites/projet2/app/public/wp-content/themes/oceanwp/inc/plugins/class-tgm-plugin-activation.php:658
+[07-Apr-2022 09:47:51 UTC] PHP   8. TGM_Plugin_Activation->activate_single_plugin($file_path = 'ocean-extra/ocean-extra.php', $slug = 'ocean-extra', $automatic = TRUE) /home/wilder/Local Sites/projet2/app/public/wp-content/themes/oceanwp/inc/plugins/class-tgm-plugin-activation.php:818
+[07-Apr-2022 09:47:51 UTC] PHP   9. activate_plugin($plugin = 'ocean-extra/ocean-extra.php', $redirect = *uninitialized*, $network_wide = *uninitialized*, $silent = *uninitialized*) /home/wilder/Local Sites/projet2/app/public/wp-content/themes/oceanwp/inc/plugins/class-tgm-plugin-activation.php:957
+[07-Apr-2022 09:47:51 UTC] PHP  10. do_action($hook_name = 'activate_ocean-extra/ocean-extra.php', ...$arg = variadic(FALSE)) /home/wilder/Local Sites/projet2/app/public/wp-admin/includes/plugin.php:689
+[07-Apr-2022 09:47:51 UTC] PHP  11. WP_Hook->do_action($args = [0 => FALSE]) /home/wilder/Local Sites/projet2/app/public/wp-includes/plugin.php:474
+[07-Apr-2022 09:47:51 UTC] PHP  12. WP_Hook->apply_filters($value = '', $args = [0 => FALSE]) /home/wilder/Local Sites/projet2/app/public/wp-includes/class-wp-hook.php:331
+[07-Apr-2022 09:47:51 UTC] PHP  13. Ocean_Extra_Theme_Wizard::install(FALSE) /home/wilder/Local Sites/projet2/app/public/wp-includes/class-wp-hook.php:307
+[07-Apr-2022 09:47:51 UTC] PHP  14. wp_safe_redirect($location = 'http://vision.local/wp-admin/admin.php?page=owp_setup', $status = *uninitialized*, $x_redirect_by = *uninitialized*) /home/wilder/Local Sites/projet2/app/public/wp-content/plugins/ocean-extra/includes/wizard/wizard.php:45
+[07-Apr-2022 09:47:51 UTC] PHP  15. wp_redirect($location = 'http://vision.local/wp-admin/admin.php?page=owp_setup', $status = 302, $x_redirect_by = 'WordPress') /home/wilder/Local Sites/projet2/app/public/wp-includes/pluggable.php:1463
+[07-Apr-2022 09:47:51 UTC] PHP  16. header($header = 'Location: http://vision.local/wp-admin/admin.php?page=owp_setup', $replace = TRUE, $http_response_code = 302) /home/wilder/Local Sites/projet2/app/public/wp-includes/pluggable.php:1358
